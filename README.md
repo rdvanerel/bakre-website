@@ -4,8 +4,8 @@
 <p> Project contains HTML, CSS, JS files with jQuery UI and jQuery Plugins</p>
 
 <h2 style="text-align:center">Main Page</h2>
-<img style="display:inline !important;" src="/screenshots/1.png" width="400px">
-<img style="display:inline !important;" src="/screenshots/2.png" width="400px">
+<img style="display:inline; position: relative;" src="/screenshots/1.png" width="400px">
+<img style="display:inline;position: relative;" src="/screenshots/2.png" width="400px">
 
 <h2 style="text-align:center">Services</h2>
 <img src="/screenshots/3.png" width="400px">
