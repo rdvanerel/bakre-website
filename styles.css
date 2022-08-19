@@ -1,0 +1,822 @@
+/* --------------------------------------------------- General CSS ----------------------------------------------------------*/
+
+body{
+    text-align:justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #E5951C;
+}
+h1::selection{
+    background: #E5951C;
+    color: white;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2::selection{
+    background: #E5951C;
+    color: white;
+}
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #E5951C;
+    margin: 25px 0px;
+    
+}
+h3::selection{
+    background: #E5951C;
+    color: white;
+}
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h4::selection{
+    background: #E5951C;
+    color: white;
+}
+h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h5::selection{
+    background: #E5951C;
+    color: white;
+}
+h6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h6::selection{
+    background: #E5951C;
+    color: white;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p::selection{
+    background: #E5951C;
+    color: white;
+}
+a::selection{
+    background: #E5951C;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1.6rem;
+}
+li a{
+    color: white;
+}
+li a:hover{
+    color: #E5951C;
+}
+
+@media only screen and (max-width: 767px) {
+    .title{
+        padding: 15px;
+        color: #E5951C;
+    }
+    .column{
+        width: 100%;
+        display: block;
+    }
+    .column img{
+        display: block;
+        width: 100%;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .title{
+        padding: 15px;
+        color: #E5951C;
+    }
+    .column{
+        width: 45vw;
+        display: inline-block;
+    }
+    .img_txt{
+        display: inline-flex;
+        align-items: center;
+    } 
+    .column img{
+        width: 100%;
+    }
+    .reverse{
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.img_txt div h2{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #E5951C;
+}
+.img_txt div p{
+    text-align: justify;
+    margin: 25px;
+}
+.img_txt{
+    align-items: center;
+}
+
+
+
+
+/* --------------------------------------------------------- Header CSS ---------------------------------------------------------- */
+
+.logo img{
+    cursor: pointer;
+    height: 50px;
+}
+.logo{
+    margin: 10px auto 10px 5%;
+    display: inline-block;
+}
+
+.cta{
+    background-color: #1a1a1a;
+    color: #E5951C;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #E5951C;
+    display: inline-block;
+}
+.cta:hover{
+    background-color: #E5951C;
+    color: #1a1a1a;
+}
+.cta_a{
+    margin-right: 10%;
+}
+
+/* --------------------------------------------------- navbar ---------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header{
+    color: #E5951C;
+    padding: 20px 10%;
+    background: #1a1a1a;
+    border-bottom: 1px solid #E5951C;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+  
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #E5951C;
+  }
+  
+  .topnav a .active {
+    background-color: #ddd;
+    color: #E5951C;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .topnav.responsive {position: relative;
+    display: inline-block;}
+    .topnav.responsive .icon {
+      position: relative;
+      display: flex;
+      text-align: right;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #myTopnav a.active {
+        display: none;
+      }
+      header .cta{
+          display: none;
+      }
+  }
+  .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #1a1a1a;
+      width: 100%;
+  }
+  .header2{
+      padding-top: 64px;
+  }
+  
+/*  ---------------------------------------------------------- Footer -------------------------------------------------------*/
+footer{
+    color: white;
+    padding: 32px 10%;
+    background: #1a1a1a;
+    border-bottom: 1px solid #E5951C;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+li, a, button{
+    text-decoration: none;
+}
+.nav_link{
+    list-style: none;
+    vertical-align: center;
+    margin-top: 10px;
+}
+.nav_link li{
+    display: inline-block;
+    color: white;
+    padding: 0px 20px;
+}
+.nav_link li a{
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+.nav_link li a:hover{
+    color: #E5951C;
+}
+.f_logo img{
+    cursor: pointer;
+    height: 70px;
+}
+.f_logo{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer_nav{
+    justify-content: center;
+    vertical-align: center;
+    transition: all 0.3s ease 0s;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer_nav li{
+    display: inline-block;
+    color: white;
+    padding: 0px 20px;
+}
+.footer_nav li a{
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+.footer_nav li a:hover{
+    color: #E5951C;
+}
+
+
+
+#srchbar{
+vertical-align: center;
+}
+
+.copyrght{
+    color:white;
+    padding:20px;
+    text-align: center;
+}
+.copyrght-link{
+    color: white;
+    font-size: 1.2rem;
+}
+.copyrght-link:hover{
+    color: #E5951C;
+}
+.copyrght{
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 767px){
+    .bd{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .bdHome{
+        width: 100%;
+        color: white;
+    }
+}
+@media only screen and (min-width: 768px){
+    .bd{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bdHome{
+        width: 100%;
+        color: white;
+    }
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+/* -------------------------------------------------------------- Home Page CSS -------------------------------------------------------- */
+@media only screen and (max-width: 767px){
+    .carousel-stage ul li img{
+        width: 600px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .carousel-stage ul li img{
+        width: 1920px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .colHome{
+        height: auto;
+    }
+}
+@media only screen and (min-width: 768px){
+    .colHome{
+        height: auto;
+    }
+}
+.colHome{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#colHome1{
+    
+    background-image: url("/images/carousel_img1.jpg");
+}
+#colHome2{
+    /* background-image: url("/images/carousel_img2.jpg"); */
+    background-color: #1a1a1a;
+}
+#colHome3{
+    background-image: url("/images/carousel_img3.jpg");
+}
+.subSubTitle{
+    margin-top: 50px;
+    margin-bottom: 16px;
+    color: #E5951C;
+}
+.subTitle{
+    color: white;
+}
+.subTitle:hover{
+    color: #E5951C;
+}
+.servicesTitle{
+    color: white;
+    list-style: none;
+    padding: 32px 16px;
+    background-color: rgba(26,26,26, 0.6);
+    border: 1px solid #E5951C;
+    width: 250px;
+    display: inline-block;
+}
+@media only screen and (min-width: 768px){
+    .servicesTitle{
+        margin: 150px 32px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .servicesTitle{
+        margin: 50px 32px;
+    }
+}
+.yellowClr{
+    color: #E5951C;
+}
+.bakre{
+    color: white;
+    font-size: 1rem;
+}
+.bakre:hover{
+    color: #E5951C;
+}
+
+/*  --------------------------------------------------------- About CSS --------------------------------------------------------- */
+
+.about_div h2{
+    color: #E5951C;
+    margin: 15px 0px;
+}
+.about_div{
+    margin: 50px 0px;
+
+}
+
+/* ------------------------------------------------------------ Services CSS -------------------------------------------------*/
+/*
+@media only screen and (max-width: 767px){
+    .services_box{
+        width: 100%;
+        height:max-content;
+    }
+    .single_box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .services_box{
+        width: 100%;
+        display: inline-flex;
+        height:max-content;
+    }
+    .single_box{
+        width: 100%;
+        min-height: 310px;
+    }
+}*/
+/*.services_box{
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    align-items: initial;
+}*/
+.services_box{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.single_box{
+    background-color: #E5951C;
+    height:max-content;
+    border-radius: 10px;
+    border: 1px solid #1a1a1a;
+    margin: 15px;
+
+}
+.single_box h2{
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.single_box p{
+    margin: 20px;
+}
+
+
+/* ----------------------------------------------------------- Contact CSS -------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    ._contact{
+        text-align: center;
+        vertical-align: top;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 32px;
+    }
+    ._contact a:hover{
+        color: #E5951C;
+    }
+}
+@media only screen and (min-width: 768px) {
+    ._contact{
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width: 33%;
+        margin-top: 15px;
+        margin-bottom: 32px;
+    }
+    ._contact a:hover{
+        color: #E5951C;
+    }
+}
+
+
+form{
+    margin: 100px 0px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  
+input[type=submit] {
+    background-color: #E5951C;
+    color: #1a1a1a;
+    padding: 12px 20px;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+    background-color: #1a1a1a;
+    border-color: #E5951C;
+    color: #E5951C;
+}
+  
+.table_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* ------------------------------------------------------ Carousel ------------------------------------------------------*/
+
+.connected-carousels .stage {
+    
+    position: relative;
+}
+@media only screen and (max-width: 767px) {
+    .carousel{
+        height: 500px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .carousel{
+        height: 650px;
+    }
+}
+
+.connected-carousels .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(26, 26, 26, 0.85);
+    opacity: .66;
+}
+
+.connected-carousels .photo-credits a {
+    color: #fff;
+}
+
+/** Navigation container **/
+
+.connected-carousels .navigation {
+    width: 260px;
+    margin: 0px auto;
+    position: relative;
+}
+
+/** Shared carousel styles **/
+
+.connected-carousels .carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.connected-carousels .carousel ul {
+    width: 10000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    object-fit:contain;
+}
+
+.connected-carousels .carousel li {
+    float: left;
+    
+}
+
+
+
+/** Stage carousel specific styles **/
+
+.connected-carousels .carousel-stage {
+    
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+/** Navigation carousel specific styles **/
+
+.connected-carousels .carousel-navigation {
+    height: 60px;
+    width: 240px;
+    margin-top: -64px;
+    background: #fff;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+         
+}
+
+.connected-carousels .carousel-navigation li {
+    cursor: pointer;
+}
+
+.connected-carousels .carousel-navigation li img {
+    display: block;
+    border: 5px solid #fff;
+}
+.connected-carousels .carousel-stage ul li img {
+    object-fit: cover;
+}
+
+.connected-carousels .carousel-navigation li.active img {
+    border-color: #ccc;
+}
+
+/** Stage carousel controls **/
+
+.connected-carousels .prev-stage,
+.connected-carousels .next-stage {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 305px;
+    height: 410px;
+    color: #fff;
+}
+
+.connected-carousels .prev-stage {
+    left: 0;
+}
+
+.connected-carousels .next-stage {
+    right: 0;
+    
+}
+
+.connected-carousels .prev-stage.inactive,
+.connected-carousels .next-stage.inactive {
+    display: none;
+}
+
+.connected-carousels .prev-stage span,
+.connected-carousels .next-stage span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #1a1a1a;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.connected-carousels .prev-stage span {
+    left: 20px;
+}
+
+.connected-carousels .next-stage span {
+    right: 20px;
+}
+
+.connected-carousels .prev-stage:hover span,
+.connected-carousels .next-stage:hover span {
+    display: block;
+}
+
+/** Navigation carousel controls **/
+
+.connected-carousels .prev-navigation,
+.connected-carousels .next-navigation {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #1a1a1a;
+    font: 16px/29px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.connected-carousels .prev-navigation {
+    left: -15px;
+    top: 15px;
+    text-indent: 6px;
+}
+
+.connected-carousels .next-navigation {
+    right: 5px;
+    top: 15px;
+    text-indent: 20px;
+}
+
+.connected-carousels .prev-navigation.inactive,
+.connected-carousels .next-navigation.inactive {
+    opacity: .5;
+    cursor: default;
+}
+/* --------------------------------- AJAX CSS ---------------------------------------------*/
+.recentProjectsTitle{
+    text-align: center;
+}
+
+.ajaxDiv{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    /*display: none;*/
+}
+/*.ajaxDiv:nth-child(1){
+    display: block;
+}*/
+.ajaxTitle{
+    color: #1a1a1a;
+}
+
+@media only screen and (max-width: 767px) {
+    .ajaxzImg{
+        width: 200px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .ajaxImg{
+        width: 300px;
+        height: 400px;
+    }
+}
+#loadMore{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#loadMoreBtn{
+    text-align: center;
+    font-size: 24px;
+    color: #E5951C;
+    border: 2px solid #E5951C;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin: 5px;
+}
