@@ -1,6 +1,7 @@
 # bakre-website
 <h1 style="text-align:center"><b>BAKRE Software Development Website Sample for Responsive Web Design Project</b></h1>
 
+The Website is fully responsive.
 <p> Project contains HTML, CSS, JS files with jQuery UI and jQuery Plugins</p>
 
 <h2 style="text-align:center">Main Page</h2>
