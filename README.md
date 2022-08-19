@@ -4,15 +4,15 @@
 <p> Project contains HTML, CSS, JS files with jQuery UI and jQuery Plugins</p>
 
 <h2 style="text-align:center">Main Page</h2>
-<img src="/screenshots/1.png" width="500" height="600">
-<img src="/screenshots/2.png" width="500" height="600">
+<img src="/screenshots/1.png" width="500">
+<img src="/screenshots/2.png" width="500">
 
 <h2 style="text-align:center">Services</h2>
-<img src="/screenshots/3.png" width="500" height="600">
+<img src="/screenshots/3.png" width="500">
 
 <h2 style="text-align:center">About</h2>
-<img src="/screenshots/4.png" width="500" height="600">
+<img src="/screenshots/4.png" width="500">
 
 <h2 style="text-align:center">Contact</h2>
-<img src="/screenshots/5.png" width="500" height="600">
+<img src="/screenshots/5.png" width="500">
 
